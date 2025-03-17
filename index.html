@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
 </head>
 <body>
-    <h1 class="main-heading">AU CGPA Predictor</h1>
-    <p class="sub-heading font-effect-shadow-multiple">Predict your CGPA in the next semester</p>
+    <h1 class="main-heading">AU SGPA Predictor</h1>
+    <p class="sub-heading font-effect-shadow-multiple">Predict your SGPA in the next semester</p>
     <div class="background-container">
         <div class="container">
             <div class="row">
@@ -21,7 +21,7 @@
                         <summary>Click Me</summary>
                         <h4>Firstly, you need to know your semester syllabus so you can enter the credits of all subjects of your semester.</h4>
                         <h4>And then need to know how much grade points you can secure in semester subjects.</h4>
-                        <h4>The CGPA is calculated based on the <span class="bg-dark text-white">total credit points(credits x Grade points) of all subjects divided by the total credits of all subjects</span>.</h4>
+                        <h4>The SGPA is calculated based on the <span class="bg-dark text-white">total credit points(credits x Grade points) of all subjects divided by the total credits of all subjects</span>.</h4>
                         <h1>Example</h1>
                         <div class="card">
                             <div class="card-body">
@@ -44,7 +44,7 @@
                 <div class="col-12">
                     <form id="cgpaForm">
                         <div class="mb-3">
-                            <label for="current_cgpa" class="form-label">Current CGPA</label>
+                            <label for="current_cgpa" class="form-label">Current CGPA(optional)</label>
                             <input type="number" class="form-control" id="current_cgpa" step="0.01" required>
                         <div class="mb-3">
                             <label for="subject_credits" class="form-label">Subject Credits (comma-separated)</label>
@@ -54,7 +54,7 @@
                             <label for="grade_points" class="form-label">Grade Points (comma-separated)</label>
                             <input type="text" class="form-control" id="grade_points" required>
                         </div>
-                        <button type="submit" class="btn btn-primary">Predict CGPA</button>
+                        <button type="submit" class="btn btn-primary">Predict SGPA</button>
                         <button type="button" id="clearButton" class="btn btn-primary">Clear all</button>
                     </form>
                 </div>

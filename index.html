@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Predictor tool</title>
+    <link rel="icon" type="image/x-icon" href="images/images (1).png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+</head>
+<body>
+    <h1 class="main-heading">AU CGPA Predictor</h1>
+    <p class="sub-heading font-effect-shadow-multiple">Predict your CGPA in the next semester</p>
+    <div class="background-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <details>
+                        <summary>Click Me</summary>
+                        <h4>Firstly, you need to know your semester syllabus so you can enter the credits of all subjects of your semester.</h4>
+                        <h4>And then need to know how much grade points you can secure in semester subjects.</h4>
+                        <h4>The CGPA is calculated based on the <span class="bg-dark text-white">total credit points(credits x Grade points) of all subjects divided by the total credits of all subjects</span>.</h4>
+                        <h1>Example</h1>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Semester 1</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Credits</h6>
+                                <p class="card-text">Subject 1: 4</p>
+                                <p class="card-text">Subject 2: 3</p>
+                                <p class="card-text">Subject 3: 3</p>
+                                <p class="card-text">Total Credits: 10</p>
+                                <h6 class="card-subtitle mb-2 text-muted">Grade Points</h6>
+                                <p class="card-text">Subject 1: 8</p>
+                                <p class="card-text">Subject 2: 7</p>
+                                <p class="card-text">Subject 3: 9</p>
+                                <p class="card-text">Total Grade Points: 24</p>
+                                <p class="card-text">CGPA: 2.4</p>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+                <div class="col-12">
+                    <form id="cgpaForm">
+                        <div class="mb-3">
+                            <label for="current_cgpa" class="form-label">Current CGPA</label>
+                            <input type="number" class="form-control" id="current_cgpa" step="0.01" required>
+                        <div class="mb-3">
+                            <label for="subject_credits" class="form-label">Subject Credits (comma-separated)</label>
+                            <input type="text" class="form-control" id="subject_credits" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="grade_points" class="form-label">Grade Points (comma-separated)</label>
+                            <input type="text" class="form-control" id="grade_points" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Predict CGPA</button>
+                        <button type="button" id="clearButton" class="btn btn-primary">Clear all</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
